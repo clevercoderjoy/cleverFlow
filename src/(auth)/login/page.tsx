@@ -1,7 +1,7 @@
 "use client";
 
 import { Input } from "@/components/ui/input";
-import { IconBrandGithub, IconBrandGoogle } from "@tabler/icons-react";
+import { FaGoogle, FaGithub } from "react-icons/fa";
 import { Label } from "@/components/ui/label";
 import { useAuthStore } from "@/store/auth"
 import Link from "next/link";
@@ -107,7 +107,7 @@ const LoginPage = () => {
               type="button"
               disabled={loading}
             >
-              <IconBrandGoogle className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
+              <FaGoogle className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
               <span className="text-sm text-neutral-700 dark:text-neutral-300">
                 Google
               </span>
@@ -118,7 +118,7 @@ const LoginPage = () => {
               type="button"
               disabled={loading}
             >
-              <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
+              <FaGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
               <span className="text-sm text-neutral-700 dark:text-neutral-300">
                 GitHub
               </span>
